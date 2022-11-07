@@ -25,7 +25,7 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
             <Label Content="TimeLeft" FontSize="40" VerticalAlignment="Center" Width="200"/>
-            <TextBlock x:Name="Time" Width="300" FontSize="30"/>
+            <TextBlock x:Name="Time" Width="300" FontSize="50" Text="30" VerticalAlignment="Center" TextAlignment="Left"/>
         </StackPanel>
         <Grid Grid.Row="1" Margin="80 0">
             <Grid.RowDefinitions>
@@ -39,28 +39,28 @@
                 <Label Content="+" FontSize="30"/>
                 <TextBlock Text="?" FontSize="40"/>
                 <Label Content="=" FontSize="30"/>
-                <TextBox Text="0" FontSize="40" Width="150"/>
+                <TextBox Text="0" FontSize="40" Width="150" x:Name="answer_plus"/>
             </StackPanel>
             <StackPanel x:Name="minus_panel" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="?" FontSize="40"/>
                 <Label Content="-" FontSize="30"/>
                 <TextBlock Text="?" FontSize="40"/>
                 <Label Content="=" FontSize="30"/>
-                <TextBox Text="0" FontSize="40" Width="150"/>
+                <TextBox Text="0" FontSize="40" Width="150" x:Name="answer_minus"/>
             </StackPanel>
             <StackPanel x:Name="mult_panel" Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="?" FontSize="40"/>
                 <Label Content="*" FontSize="30"/>
                 <TextBlock Text="?" FontSize="40"/>
                 <Label Content="=" FontSize="30"/>
-                <TextBox Text="0" FontSize="40" Width="150"/>
+                <TextBox Text="0" FontSize="40" Width="150" x:Name="answer_mult"/>
             </StackPanel>
             <StackPanel x:Name="divide_panel" Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="?" FontSize="40"/>
                 <Label Content=":" FontSize="30"/>
                 <TextBlock Text="?" FontSize="40"/>
                 <Label Content="=" FontSize="30"/>
-                <TextBox Text="0" FontSize="40" Width="150"/>
+                <TextBox Text="0" FontSize="40" Width="150" x:Name="answer_divide"/>
             </StackPanel>
         </Grid>
         <Button Grid.Row="2" Content="Start the quiz" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10 5" Click="Button_Click"/>
